@@ -1,0 +1,22 @@
+# Configuration settings
+Input_size : 32 # Input size: The size of the input images (e.g., 32x32 pixels)
+Validation_ratio: 0.1  # Ratio of data used for validation during training [0 - 1]
+Batch_size: 64  # Batch size for training
+learning_rate: 0.001  # Learning rate for the optimizer
+stp_size: 6  # Step size for the learning rate scheduler
+gama: 0.1  # Gamma value for the learning rate scheduler
+epochs: 10  # Number of epochs for training
+
+# Specify the type of block to be used in the neural network
+patch_size: 4  # Patch size: The size of patches used for dividing the input image
+embed_dim: 128 # Embedding dimension: Dimension of the embedding space
+num_heads: 8 # Number of heads: Number of attention heads in the multi-head attention mechanism
+num_encoders : 4 # Number of encoders: Number of encoder layers in the transformer architecture
+
+# Load Trained Model: Boolean flag indicating whether to load a pre-trained model (Saved_models)
+Load_Trained_Model : True
+
+# Hard Label Distillation: Boolean flag indicating whether hard label distillation is used
+Hard_Label_Distillation : False
+
+
